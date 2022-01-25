@@ -1,0 +1,4 @@
+p, admin, tenants*, count
+p, admin, tenants1, count
+p, admin, tenants2, count
+g, test1, admin

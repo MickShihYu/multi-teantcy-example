@@ -1,0 +1,38 @@
+{
+  "ids": {
+    "users": 3,
+    "auth_clients": 2,
+    "roles": 4,
+    "tenants": 2,
+    "user_tenants": 3,
+    "user_credentials": 3
+  },
+  "models": {
+    "users": {
+      "1": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.679Z\",\"modifiedOn\":\"2022-01-24T08:25:42.679Z\",\"firstName\":\"Test\",\"lastName\":\"test_last1\",\"username\":\"test1\",\"phone\":\"9898989898\",\"defaultTenant\":1,\"id\":1}",
+      "2": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.757Z\",\"modifiedOn\":\"2022-01-24T08:25:42.757Z\",\"firstName\":\"Test\",\"lastName\":\"test_last2\",\"username\":\"test2\",\"phone\":\"9898989898\",\"defaultTenant\":1,\"id\":2}",
+      "3": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.757Z\",\"modifiedOn\":\"2022-01-24T08:25:42.757Z\",\"firstName\":\"Test\",\"lastName\":\"test_last3\",\"username\":\"test3\",\"phone\":\"9898989898\",\"defaultTenant\":1,\"id\":3}"
+    },
+    "auth_clients": {
+      "1": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.841Z\",\"modifiedOn\":\"2022-01-24T08:25:42.841Z\",\"clientId\":\"web\",\"clientSecret\":\"test_secret1\",\"secret\":\"poiuytrewq\",\"redirectUrl\":\"http://localhost:4200/login/success\",\"accessTokenExpiration\":900,\"refreshTokenExpiration\":86400,\"authCodeExpiration\":180,\"id\":1}"
+    },
+    "roles": {
+      "1": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.665Z\",\"modifiedOn\":\"2022-01-24T08:25:42.665Z\",\"name\":\"super_admin\",\"permissions\":[\"canLoginToIPS\",\"ViewOwnUser\",\"ViewAnyUser\",\"ViewTenantUser\",\"CreateAnyUser\",\"CreateTenantUser\",\"UpdateOwnUser\",\"UpdateTenantUser\",\"UpdateAnyUser\",\"DeleteTenantUser\",\"DeleteAnyUser\",\"ViewTenant\",\"CreateTenant\",\"UpdateTenant\",\"DeleteTenant\",\"ViewRole\",\"CreateRole\",\"UpdateRole\",\"DeleteRole\",\"ViewAudit\",\"CreateAudit\",\"UpdateAudit\",\"DeleteAudit\"],\"roleKey\":1,\"id\":1}",
+      "2": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.669Z\",\"modifiedOn\":\"2022-01-24T08:25:42.669Z\",\"name\":\"admin\",\"permissions\":[\"ViewOwnUser\",\"ViewTenantUser\",\"CreateTenantUser\",\"UpdateOwnUser\",\"UpdateTenantUser\",\"DeleteTenantUser\",\"ViewTenant\",\"ViewRole\"],\"roleKey\":2,\"id\":2}",
+      "3": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.670Z\",\"modifiedOn\":\"2022-01-24T08:25:42.670Z\",\"name\":\"user\",\"permissions\":[\"ViewTenant\"],\"roleKey\":3,\"id\":3}"
+    },
+    "tenants": {
+      "1": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.676Z\",\"modifiedOn\":\"2022-01-24T08:25:42.676Z\",\"name\":\"application\",\"type\":\"application\",\"status\":\"active\",\"id\":1}"
+    },
+    "user_tenants": {
+      "1": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.856Z\",\"modifiedOn\":\"2022-01-24T08:25:42.856Z\",\"userId\":1,\"tenantId\":1,\"roleId\":1,\"status\":\"active\",\"id\":1}",
+      "2": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.863Z\",\"modifiedOn\":\"2022-01-24T08:25:42.863Z\",\"userId\":2,\"tenantId\":1,\"roleId\":3,\"status\":\"active\",\"id\":2}",
+      "3": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.863Z\",\"modifiedOn\":\"2022-01-24T08:25:42.863Z\",\"userId\":3,\"tenantId\":1,\"roleId\":3,\"status\":\"active\",\"id\":3}"
+    },
+    "user_credentials": {
+      "1": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.756Z\",\"modifiedOn\":\"2022-01-24T08:25:42.756Z\",\"userId\":1,\"authProvider\":\"internal\",\"password\":\"$2b$10$vaFcxwc1HFBNC.ai7eOcjunCECCI3HqIfxHPzCGHhuvLGxYoz8Mee\",\"id\":1}",
+      "2": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.837Z\",\"modifiedOn\":\"2022-01-24T08:25:42.837Z\",\"userId\":2,\"authProvider\":\"internal\",\"password\":\"$2b$10$y1I/IbaTtKdj9ZcwdLIuNe6ABoUJCncFNzlXN/Ep/Nl1H41OzEcru\",\"id\":2}",
+      "3": "{\"deleted\":false,\"createdOn\":\"2022-01-24T08:25:42.837Z\",\"modifiedOn\":\"2022-01-24T08:25:42.837Z\",\"userId\":3,\"authProvider\":\"internal\",\"password\":\"$2b$10$y1I/IbaTtKdj9ZcwdLIuNe6ABoUJCncFNzlXN/Ep/Nl1H41OzEcru\",\"id\":3}"
+    }
+  }
+}

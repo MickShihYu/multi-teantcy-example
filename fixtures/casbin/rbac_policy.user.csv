@@ -1,0 +1,3 @@
+p, user, tenants*, CreateTenant
+p, user, /tenants/count, ViewTenant
+g, test2, user
